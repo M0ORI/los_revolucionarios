@@ -1,0 +1,13 @@
+:root {
+    /*Colores*/
+    --color-texto: #361916;
+    /* --color-primario: */
+    --color-secundario: #ddd0ce;
+    --color-bg: #f0dcba;
+
+}
+
+@font-face {
+    font-family: 'Deutschlands';
+    src: url(../public/fonts/Deutschlands.ttf) format('truetype');
+}
