@@ -5,7 +5,6 @@ const Menu = () => {
   return (
     <div>
       <Navbar/>
-      
     </div>
   )
 }
