@@ -6,12 +6,13 @@ function App() {
 
   return (
     <>
+      <Navbar/>
+      <Body/>
       {/* <Navbar/>
       <Carrusel/>
       <Body/>
       <Footer/> */}
-      <Navbar/>
-      <p>HOLA</p>
+      
     </>
   )
 }
