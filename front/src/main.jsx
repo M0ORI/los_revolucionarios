@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Menu from './Menu.jsx';
+import './assets/styles.css'
 
 const router = createBrowserRouter([
   {
