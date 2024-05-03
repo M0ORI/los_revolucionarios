@@ -1,0 +1,31 @@
+@import '../../var.css';
+
+.container {
+    padding-top: 12vh;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    height: 20rem;
+}
+.img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) { /*Tablet*/
+    .carrusel {
+        height: 30rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) { /*Escritorio*/
+    .carrusel {
+        height: 88vh;
+    }
+}
