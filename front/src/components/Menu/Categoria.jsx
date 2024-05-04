@@ -7,7 +7,6 @@ const Categoria = ({nombre}) => {
     <section className={styles.contenedor}>
         <h1 className={styles.tituloCategoria}> {nombre} </h1>
         <Platillo nombre={'Pollo adobado'} descripcion={'Acompañado con papas, aguacate, ensaladas y frijoles'} img={'../../public/images/Pollo_adobado.jpeg'}/>
-        <Platillo nombre={'Pollo adobado'} descripcion={'Acompañado con papas, aguacate, ensaladas y frijoles'} img={'../../public/images/Pollo_adobado.jpeg'}/>
     </section>
   )
 }
