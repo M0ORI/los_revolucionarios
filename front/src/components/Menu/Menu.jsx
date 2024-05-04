@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
-import Platillo from './Platillo'
 import Categoria from './Categoria'
 import InvNavrbar from '../InvNavbar/InvNavrbar'
+
+import menuData from '../../data/menu.json'
 
 const Menu = () => {
   return (
@@ -10,7 +11,13 @@ const Menu = () => {
     <body>
       <Navbar/>
       <main>
-        <Categoria nombre={'A la parrilla'}/>
+        {
+          menuData.map((categoria, id) => {
+            return (
+              <Categoria nombre={categoria.categoria} platillos={categoria.platillos} key={id} />
+            )
+          })
+        }
       </main>
     </body>
     <InvNavrbar/>
