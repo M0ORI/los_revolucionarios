@@ -11,6 +11,7 @@ const Menu = () => {
   return (
     <>
       <Navbar/>
+      <div className={styles.divisor}></div>
       <main>
         {
           menuData.map((categoria, id) => {
@@ -19,6 +20,7 @@ const Menu = () => {
             )
           })
         }
+      <div className={styles.divisor}></div>
       <Contacto/>
       </main>
       <InvNavrbar/>
