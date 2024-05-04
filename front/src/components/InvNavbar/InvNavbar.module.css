@@ -1,0 +1,15 @@
+@import '../../var.css';
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 70px;
+}
+
+.contenedor img{
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+}
