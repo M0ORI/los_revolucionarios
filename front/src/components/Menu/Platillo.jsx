@@ -8,7 +8,7 @@ const Platillo = ({img, nombre, descripcion}) => {
         <img src={img} alt="" />
       </div>
       <div className={styles.informacionContenedor}>
-        <h1> {nombre} </h1>
+        <h2> {nombre} </h2>
         <p> {descripcion} </p>
       </div>
     </div>

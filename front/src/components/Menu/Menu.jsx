@@ -2,13 +2,14 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import Categoria from './Categoria'
 import InvNavrbar from '../InvNavbar/InvNavrbar'
-
+import Contacto from '../Contacto/Contacto'
+import styles from './Menu.module.css'
 import menuData from '../../data/menu.json'
+
 
 const Menu = () => {
   return (
     <>
-    <body>
       <Navbar/>
       <main>
         {
@@ -18,9 +19,9 @@ const Menu = () => {
             )
           })
         }
+      <Contacto/>
       </main>
       <InvNavrbar/>
-    </body>
     </>
     
   )

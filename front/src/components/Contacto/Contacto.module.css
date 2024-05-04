@@ -1,0 +1,36 @@
+@import '../../var.css';
+
+
+.main {
+    margin: 25px 25px;
+    padding: 10px 10px;
+
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    list-style: none;
+}
+
+.item img {
+    width: 40px;
+    height: 40px;
+}
+
+.item a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.texto {
+    color: var(--color-texto);
+    font-size: 20px;
+}

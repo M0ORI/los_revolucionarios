@@ -8,9 +8,12 @@
     height: 60px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    position: sticky;
+    bottom: 0;
+    width: 100%; 
 }
 
-.contenedor a {
+.link {
     background-color: brown;
     margin: 5px 5px;
     padding: 10px 10px;
@@ -18,9 +21,13 @@
     align-items: center;
 }
 
+
 .contenedor img{
     background-color: brown;
     width: 30px;
     height: 30px;
     border-radius: 0;
 }
+
+
+  
