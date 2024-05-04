@@ -19,8 +19,8 @@ const Menu = () => {
           })
         }
       </main>
+      <InvNavrbar/>
     </body>
-    <InvNavrbar/>
     </>
     
   )
