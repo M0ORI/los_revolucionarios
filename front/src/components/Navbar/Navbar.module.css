@@ -25,6 +25,7 @@
 
 .navbar > img { /*Indica el hijo inmediato*/
     height: 100px;
+    width: 100px;
 }
 
 nav, nav ul, nav li, nav a {
