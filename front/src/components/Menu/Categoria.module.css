@@ -1,10 +1,15 @@
 @import '../../var.css';
 
-.contenedor {
+.contenedor{
+    margin: 20px 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin: 20px 20px;
+    gap: 15px;
+}
+
+.contenedorPlatillos{
+    display: flex;
+    flex-direction: column;
     gap: 15px;
 }
 
@@ -14,9 +19,13 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    
 }
 
 @media only screen and (min-width: 1024px) {
-    
+
+    .contenedorPlatillos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

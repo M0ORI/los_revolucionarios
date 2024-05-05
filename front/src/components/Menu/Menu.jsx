@@ -21,12 +21,17 @@ const Menu = () => {
             )
           })
         }
+      <div className='contenedorBoton'>
+        <p>Descarga nuestro menu completo !!</p>
+        <a href="/public/MENU.pdf" download>
+          <button>Carta Completa</button>
+        </a>
+      </div>
       <div className='divisor' ></div>
       <Contacto/>
       </main>
       <InvNavrbar/>
     </>
-    
   )
 }
 
