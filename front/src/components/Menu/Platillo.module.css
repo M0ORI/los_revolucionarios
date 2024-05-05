@@ -20,11 +20,12 @@
 }
 
 .informacionContenedor h2{
-    color: var(--color-texto);
+    color: var(--color-titulos);
+    font-weight: 450;
 }
 
 img {
     border-radius: 20px;
-    height: 160px;
     width: 150px;
+    height: 160px;
 }

@@ -3,15 +3,16 @@ import Navbar from '../Navbar/Navbar'
 import Categoria from './Categoria'
 import InvNavrbar from '../InvNavbar/InvNavrbar'
 import Contacto from '../Contacto/Contacto'
-import styles from './Menu.module.css'
+
 import menuData from '../../data/menu.json'
 
+import './Menu.css'
 
 const Menu = () => {
   return (
     <>
       <Navbar/>
-      <div className={styles.divisor}></div>
+      <div className='divisor'></div>
       <main>
         {
           menuData.map((categoria, id) => {
@@ -20,7 +21,7 @@ const Menu = () => {
             )
           })
         }
-      <div className={styles.divisor}></div>
+      <div className='divisor' ></div>
       <Contacto/>
       </main>
       <InvNavrbar/>
