@@ -14,15 +14,23 @@ const Body = () => {
             <p className={styles.description}>Ven y disfruta de la mejor comida con un ambiente familiar, 25 años de experiencia nos respaldan ¡Te esperamos!</p>
             <div className={styles.buttons}>
                 <div className={styles.button}>
-                    <p>Llamanos!</p>
+                    <p>
+                        <a href="">
+                            Llamanos!
+                        </a>
+                    </p>
                     <img src={phone} alt="phone" />
                 </div>
                 <div className={styles.button}>
-                    <p>Whatsapp!</p>
+                    <p>
+                        <a href="">
+                            Whatsapp!
+                        </a>
+                    </p>
                     <img className={styles['whatsapp-button']} src={whatsapp} alt="logow" />
                 </div>
             </div>
-            <h1 className={styles.subtitle} >A LA PARRILLA</h1>
+            <h1 className={styles.subtitle}>A la parrilla...</h1>
             <Platillos name='Biste rico' img={biste} />
             <Platillos name='Papas alafranchute' img={biste} />
             <Platillos name='Sillas acarameladas' img={biste} />

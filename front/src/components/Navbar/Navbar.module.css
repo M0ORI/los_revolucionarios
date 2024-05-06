@@ -10,6 +10,7 @@
     top: 0;
     width: 100%;
     z-index: 1000;
+    border-bottom: 2px solid #361916;
 }
 
 .navbar a {
@@ -32,15 +33,18 @@
     margin-left: 1rem;
 }
 
-nav, nav ul, nav li, nav a {
+nav, nav ul, nav li, nav a, nav p{
     margin: 0 0;
     padding: 0;
     list-style: none;
     font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
     display: none;
+    
 }
 
 

@@ -43,16 +43,16 @@
 }
 
 .button img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .button a {
-    font-family: 'Deutschlands';
     font-size: 1.5rem;
     font-weight: lighter;
     color: #361916;
     padding-inline: 50px;
+    text-decoration: none;
 }
 
 .platillo {
@@ -66,6 +66,7 @@
 .platillo img {
     width: 85%;
     height: auto;
+    margin-bottom: 5%;
 }
 
 .seccionPlatillo {
@@ -107,6 +108,15 @@
     }
     .buttons {
         padding-bottom: 30px;
+        font-size: 40px;
+    }
+    .button a {
+        font-size: 40px;
+        background: #361916;
+        color: #ddd0ce;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 10px 20px;
     }
     .subtitle {
         padding-bottom: 10px;
@@ -114,5 +124,8 @@
     }
     .seccionPlatillo {
         font-size: 40px;
+    }
+    .button img {
+        display: none;
     }
 }

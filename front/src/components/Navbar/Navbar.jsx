@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   
-  const ruta = location.pathname === '/' ? 'MENU' : 'INICIO';
+  const ruta = location.pathname === '/' ? 'Menu' : 'Inicio';
 
   return (
     <header className={styles.navbar}>
