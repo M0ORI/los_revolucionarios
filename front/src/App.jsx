@@ -1,4 +1,5 @@
 import './app.css'
+import InvNavrbar from './components/InvNavbar/InvNavrbar'
 import Navbar from './components/Navbar/Navbar'
 
 
@@ -7,12 +8,11 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Body/>
       {/* <Navbar/>
       <Carrusel/>
       <Body/>
       <Footer/> */}
-      
+      <InvNavrbar/>
     </>
   )
 }

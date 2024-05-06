@@ -1,0 +1,49 @@
+@import '../../var.css';
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px; 
+    gap: 25px;
+}
+
+.informacionContenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.informacionContenedor p{
+    color: var(--color-texto);
+    font-weight: bold;
+}
+
+.informacionContenedor h2{
+    color: var(--color-titulos);
+    font-weight: 450;
+}
+
+img {
+    border-radius: 20px;
+    width: 150px;
+    height: 160px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+@media only screen and (min-width: 1024px) {
+
+    img{
+        width: 200px;
+        height: 150px;
+        border-radius: 0;
+    }
+
+    .contenedor{
+        max-width: 500px;
+        height: auto;
+    }
+}

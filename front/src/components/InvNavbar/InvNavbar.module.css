@@ -1,0 +1,40 @@
+@import '../../var.css';
+
+.contenedor{
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: sticky;
+    bottom: 0;
+    width: 100%; 
+}
+
+.link {
+    background-color: brown;
+    margin: 5px 5px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.contenedor img{
+    background-color: brown;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1024px) {
+    .contenedor{
+        display: none;
+    }
+}
