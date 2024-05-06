@@ -6,7 +6,7 @@
     align-items: center;
     height: 12vh;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,7 +28,8 @@
 }
 
 .navbar > img { /*Indica el hijo inmediato*/
-    height: 4rem;
+    height: 80px;
+    width: 80px;
     margin-left: 1rem;
 }
 
@@ -42,6 +43,7 @@ nav, nav ul, nav li, nav a {
 nav {
     display: none;
 }
+
 
 @media only screen and (min-width: 768px) { /*Tablet*/
 }
