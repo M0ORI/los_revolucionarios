@@ -31,11 +31,6 @@
                 "nombre": "Carrillera Marina",
                 "descripcion": "Acompañado de pimiento morrón, cebolla, tocino, queso y camarones.",
                 "img": "../../public/images/Carrillera_Marina.jpg"
-            },
-            {
-                "nombre": "Tostada de camarón",
-                "descripcion": "Acompañada de aguacate fresco y otros condimentos.",
-                "img": "../../public/images/Tostada_Camaron.jpeg"
             }
             
         ]
