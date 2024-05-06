@@ -27,13 +27,8 @@
 }
 
 .navbar > img { /*Indica el hijo inmediato*/
-<<<<<<< HEAD
     height: 4rem;
     width: 4rem;
-=======
-    height: 80px;
-    width: 80px;
->>>>>>> 9c159fda47d7242b4cacf178729fd88aa6b10dae
     margin-left: 1rem;
 }
 
