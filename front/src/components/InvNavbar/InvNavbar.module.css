@@ -23,9 +23,9 @@
 }
 
 .link p {
-    background-color: brown;
+    background-color: #361916;
     font-size: 25px;
-    color: black;
+    color: var(--color-bg);
 }
 
 .contenedor img{
