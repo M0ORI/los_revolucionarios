@@ -4,6 +4,8 @@ import logo from '../../../public/images/logo.png';
 import phone from '../../../public/images/phone.svg';
 import whatsapp from '../../../public/images/whatsapp-logo.svg';
 import biste from '../../../public/images/biste.jpg';
+import filete from '../../../public/images/Filete.jpeg';
+import pollo from '../../../public/images/pollo.jpeg';
 import styles from './Body.module.css';
 
 const Body = () => {
@@ -14,18 +16,27 @@ const Body = () => {
             <p className={styles.description}>Ven y disfruta de la mejor comida con un ambiente familiar, 25 años de experiencia nos respaldan ¡Te esperamos!</p>
             <div className={styles.buttons}>
                 <div className={styles.button}>
-                    <p>Llamanos!</p>
+                    <p>
+                        <a href="">
+                            Llamanos!
+                        </a>
+                    </p>
                     <img src={phone} alt="phone" />
                 </div>
                 <div className={styles.button}>
-                    <p>Whatsapp!</p>
+                    <p>
+                        <a href="">
+                            Whatsapp!
+                        </a>
+                    </p>
                     <img className={styles['whatsapp-button']} src={whatsapp} alt="logow" />
                 </div>
             </div>
-            <h1 className={styles.subtitle} >A LA PARRILLA</h1>
-            <Platillos name='Biste rico' img={biste} />
-            <Platillos name='Papas alafranchute' img={biste} />
-            <Platillos name='Sillas acarameladas' img={biste} />
+            <hr style={{ width: '90%', margin: 'auto', background: '#361916', height: '2px', border: 'none', margin: '2rem'}} />
+            <h1 className={styles.subtitle}>A la parrilla...</h1> 
+            <Platillos name='Costilla de Res' img={biste} />
+            <Platillos name='Pollo Adobado' img={filete} />
+            <Platillos name='Pollo ' img={pollo} />
 
         </div>
     );

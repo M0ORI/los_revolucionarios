@@ -1,7 +1,6 @@
 @import '../../var.css';
 
 .container {
-    padding-top: 12vh;
     overflow: hidden;
     width: 100%;
     z-index: -1;
@@ -26,6 +25,11 @@
 
 @media only screen and (min-width: 1024px) { /*Escritorio*/
     .carrusel {
-        height: 88vh;
+        height: 75vh;
+        background: white;
+    }
+    .img {
+        width: 100vw;
+        height: auto;
     }
 }

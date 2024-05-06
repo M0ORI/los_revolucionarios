@@ -6,12 +6,11 @@
     align-items: center;
     height: 12vh;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
-    display:none;
+    border-bottom: 2px solid #361916;
 }
 
 .navbar a {
@@ -30,19 +29,24 @@
 
 .navbar > img { /*Indica el hijo inmediato*/
     height: 4rem;
+    width: 5rem;
     margin-left: 1rem;
 }
 
-nav, nav ul, nav li, nav a {
+nav, nav ul, nav li, nav a, nav p{
     margin: 0 0;
     padding: 0;
     list-style: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
     display: none;
+    
 }
+
 
 @media only screen and (min-width: 768px) { /*Tablet*/
 }
