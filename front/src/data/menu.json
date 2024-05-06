@@ -5,12 +5,12 @@
             {
                 "nombre": "Pollo Adobado",
                 "descripcion": "Acompañado con papas, aguacate, ensalada y frijoles.",
-                "img": "../../public/images/Pollo_adobado.jpeg"
+                "img": "/images/Pollo_adobado.jpeg"
             },
             {
                 "nombre": "Costilla de Res",
                 "descripcion": "220 gramos del corte acompañados de papas, frijoles, ensalada, y cebollitas.",
-                "img": "../../public/images/Costilla_Res.jpg"
+                "img": "/images/Costilla_Res.jpg"
             }
         ]
     },
@@ -20,22 +20,22 @@
             {
                 "nombre": "Tostada de camarón",
                 "descripcion": "Acompañada de aguacate fresco y otros condimentos.",
-                "img": "../../public/images/Tostada_Camaron.jpeg"
+                "img": "/images/Tostada_Camaron.jpeg"
             },
             {
                 "nombre": "Coctel de camarón o pulpo",
                 "descripcion": "Acompañado de la sala especial de la casa.",
-                "img": "../../public/images/Coctel_CP.jpg"
+                "img": "/images/Coctel_CP.jpg"
             },
             {
                 "nombre": "Carrillera Marina",
                 "descripcion": "Acompañado de pimiento morrón, cebolla, tocino, queso y camarones.",
-                "img": "../../public/images/Carrillera_Marina.jpg"
+                "img": "/images/Carrillera_Marina.jpg"
             },
             {
                 "nombre": "Tostada de camarón",
                 "descripcion": "Acompañada de aguacate fresco y otros condimentos.",
-                "img": "../../public/images/Tostada_Camaron.jpeg"
+                "img": "/images/Tostada_Camaron.jpeg"
             }
             
         ]
@@ -46,12 +46,12 @@
             {
                 "nombre": "Revolucionaria",
                 "descripcion": "Bebida especial de la casa, de diferentes sabores.",
-                "img": "../../public/images/Revolucionaria.jpg"
+                "img": "/images/Revolucionaria.jpg"
             },
             {
                 "nombre": "Variedad de refrescos",
                 "descripcion": "Refrescos de varios sabores para acompañar tus comidas.",
-                "img": "../../public/images/Refrescos.jpg"
+                "img": "/images/Refrescos.jpg"
             }
         ]
     }

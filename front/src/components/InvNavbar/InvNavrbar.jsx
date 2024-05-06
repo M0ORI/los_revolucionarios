@@ -12,13 +12,13 @@ const InvNavrbar = () => {
     <nav className={styles.contenedor}>
       <Link to="/" className={styles.link}>
         <img
-         src={location.pathname === '/' ? "../../public/images/icons/hogar2.png" : "../../public/images/icons/hogar.png"}  alt="" 
+         src={location.pathname === '/' ? "/images/icons/hogar2.png" : "/images/icons/hogar.png"}  alt="" 
          />
          <p>{home} </p>
       </Link>
       <Link to="/menu" className={styles.link}>
         <img
-         src={location.pathname === '/menu' ? "../../public/images/icons/cubiertos2.png" : "../../public/images/icons/cubiertos.png"}  alt="" 
+         src={location.pathname === '/menu' ? "/images/icons/cubiertos2.png" : "/images/icons/cubiertos.png"}  alt="" 
          />
          <p>{menu}</p>
       </Link>
