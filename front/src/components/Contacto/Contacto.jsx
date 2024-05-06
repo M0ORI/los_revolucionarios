@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './Contacto.module.css'
+import icon1 from '../../../public/images/Icons/phone-call.png'
+import icon2 from '../../../public/images/Icons/whatsapp.png'
 const Contacto = () => {
   return (
     <div className={styles.main}>
@@ -7,13 +9,13 @@ const Contacto = () => {
         <li className={styles.item}>
             <a href="">
                 <h2 className={styles.texto}>Llamanos</h2>
-                <img src="../../public/images/icons/phone-call.png" alt="" />
+                <img src={icon1} alt="" />
             </a>
         </li>
         <li className={styles.item}>
             <a href="">
                 <h2 className={styles.texto}>WhatsApp</h2>
-                <img src="../../public/images/icons/whatsapp.png" alt="" />
+                <img src={icon2} alt="" />
             </a>
         </li>
       </ul>
