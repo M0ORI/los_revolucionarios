@@ -9,8 +9,10 @@
 
 .contenedorPlatillos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
 }
 
 .tituloCategoria{
@@ -23,9 +25,4 @@
 
 @media only screen and (min-width: 1024px) {
 
-    .contenedorPlatillos{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
