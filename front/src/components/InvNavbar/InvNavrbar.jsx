@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom'; 
 import styles from './InvNavbar.module.css';
+import home1 from "../../../public/images/Icons/hogar.png"
+import home2 from "../../../public/images/Icons/hogar2.png"
+import cubiertos from "../../../public/images/Icons/cubiertos.png"
+import cubiertos2 from "../../../public/images/Icons/cubiertos2.png"
 
 const InvNavrbar = () => {
   const location = useLocation(); // Obtén la ubicación actual
@@ -12,13 +16,13 @@ const InvNavrbar = () => {
     <nav className={styles.contenedor}>
       <Link to="/" className={styles.link}>
         <img
-         src={location.pathname === '/' ? "/images/icons/hogar2.png" : "/images/icons/hogar.png"}  alt="" 
+         src={location.pathname === '/' ? home2 : home1}  alt="" 
          />
          <p>{home} </p>
       </Link>
       <Link to="/menu" className={styles.link}>
         <img
-         src={location.pathname === '/menu' ? "/images/icons/cubiertos2.png" : "/images/icons/cubiertos.png"}  alt="" 
+         src={location.pathname === '/menu' ? cubiertos2 : cubiertos}  alt="" 
          />
          <p>{menu}</p>
       </Link>
