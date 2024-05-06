@@ -1,7 +1,6 @@
 @import '../../var.css';
 
 .container {
-    padding-top: 12vh;
     overflow: hidden;
     width: 100%;
     z-index: -1;

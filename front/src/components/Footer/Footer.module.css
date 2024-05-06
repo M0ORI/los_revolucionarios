@@ -7,6 +7,7 @@
     height: 21vh;
     justify-content: center;
     width: 100%;
+    max-width: 100%;
     z-index: 1000;
     background-color: #361916;
     color: #ddd0ce;
@@ -38,6 +39,7 @@
 
 .footer__info > img {
     height: 4rem;
+    width: 4rem;
     background-color: transparent;
     margin-bottom: 0;
 }
@@ -73,7 +75,7 @@
     text-decoration: none;
     color: #ddd0ce;
     font-size: 1.3rem;
-    margin: 0 1rem;
+    margin: 0;
     background-color: transparent;
     justify-content: center;
     align-items: center;

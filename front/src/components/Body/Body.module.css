@@ -1,6 +1,8 @@
 @import '../../var.css';
 
 .body {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,13 +16,14 @@
 }
 
 .logo {
-    height: 100px;
+    height: 5rem;
+    width: 5rem;
 }
 
 .description {
     font-weight: bold;
     color: #361916;;
-    text-align: justify;
+    text-align: center;
     padding: 2.5rem;
     font-size: 20px;
 }
@@ -36,6 +39,12 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
+    max-width: 5rem;
+}
+
+.button img {
+    width: 5rem;
+    height: 5rem;
 }
 
 .button a {
@@ -44,11 +53,6 @@
     font-weight: lighter;
     color: #361916;
     padding-inline: 50px;
-}
-
-.whatsapp-button {
-    width: 48px;
-    height: 48px;
 }
 
 .platillo {
@@ -61,7 +65,7 @@
 
 .platillo img {
     width: 85%;
-    padding-bottom: 5%;
+    height: auto;
 }
 
 .seccionPlatillo {
