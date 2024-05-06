@@ -2,7 +2,6 @@
 
 .body {
     margin-top: 2rem;
-    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +22,8 @@
 
 .description {
     font-weight: bold;
-    color: #361916;;
+    color: #361916;
+    ;
     text-align: center;
     padding: 2rem 2rem;
     font-size: 20px;
@@ -32,13 +32,13 @@
 .buttons {
     display: flex;
     justify-content: space-between;
-    width: 60%; 
+    width: 60%;
 }
 
 .button {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     max-width: 5rem;
 }
 
@@ -66,14 +66,16 @@
 .platillo img {
     width: 90%;
     height: auto;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
     border-radius: 4px;
+    max-height: 14rem;
+    object-fit: cover;
 }
 
 .seccionPlatillo {
     color: #9b3d34;
     font-size: 22px;
-    padding-bottom: 5%;
+    padding-bottom: 2.5%;
 }
 
 .subtitle {
@@ -85,11 +87,17 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .description { 
+    .description {
         padding-inline: 7rem;
     }
+
     .platillo {
         padding-inline: 4rem;
+    }
+
+    .platillo img {
+        max-height: 25rem;
+        object-fit: cover;
     }
 }
 
@@ -97,23 +105,29 @@
     .nombre {
         font-size: 70px;
     }
+
     .logo {
         width: 9rem;
         height: 9rem;
     }
+
     .description {
         font-size: 28px;
         padding-inline: 18rem;
         text-align: center;
     }
-    .platillo {
-        width: 50%;
-        height: auto;
+
+    .platillo img {
+        max-height: 30rem;
+        max-width: 60rem;
+        object-fit: cover;
     }
+
     .buttons {
         padding-bottom: 30px;
         font-size: 40px;
     }
+
     .button a {
         font-size: 40px;
         background: #361916;
@@ -122,13 +136,17 @@
         text-decoration: none;
         padding: 10px 20px;
     }
+
     .subtitle {
         padding-bottom: 10px;
         font-size: 60px;
     }
+
     .seccionPlatillo {
         font-size: 40px;
+
     }
+
     .button img {
         display: none;
     }
