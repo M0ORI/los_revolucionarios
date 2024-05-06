@@ -30,10 +30,11 @@ const Body = () => {
                     <img className={styles['whatsapp-button']} src={whatsapp} alt="logow" />
                 </div>
             </div>
-            <h1 className={styles.subtitle}>A la parrilla...</h1>
-            <Platillos name='Biste rico' img={biste} />
-            <Platillos name='Papas alafranchute' img={biste} />
-            <Platillos name='Sillas acarameladas' img={biste} />
+            <hr style={{ width: '90%', margin: 'auto', background: '#361916', height: '2px', border: 'none', margin: '2rem'}} />
+            <h1 className={styles.subtitle}>A la parrilla...</h1> 
+            <Platillos name='Filete Mignon con Puré de Papas' img={biste} />
+            <Platillos name='Salmón a la Parrilla' img={biste} />
+            <Platillos name='Risotto de Champiñones' img={biste} />
 
         </div>
     );

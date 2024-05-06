@@ -6,11 +6,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .nombre {
     font-family: 'Deutschlands';
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: lighter;
     color: #361916;
 }
@@ -24,7 +25,7 @@
     font-weight: bold;
     color: #361916;;
     text-align: center;
-    padding: 2.5rem;
+    padding: 2rem 2rem;
     font-size: 20px;
 }
 
@@ -32,7 +33,6 @@
     display: flex;
     justify-content: space-between;
     width: 60%; 
-    padding-bottom: 10%;
 }
 
 .button {
@@ -64,9 +64,10 @@
 }
 
 .platillo img {
-    width: 85%;
+    width: 90%;
     height: auto;
     margin-bottom: 5%;
+    border-radius: 4px;
 }
 
 .seccionPlatillo {
@@ -78,6 +79,9 @@
 .subtitle {
     color: #50342d;
     padding-bottom: 3%;
+    font-family: 'Deutschlands';
+    font-size: 40px;
+    font-weight: lighter;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -120,7 +124,7 @@
     }
     .subtitle {
         padding-bottom: 10px;
-        font-size: 40px;
+        font-size: 60px;
     }
     .seccionPlatillo {
         font-size: 40px;

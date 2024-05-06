@@ -29,7 +29,7 @@
 
 .navbar > img { /*Indica el hijo inmediato*/
     height: 4rem;
-    width: 4rem;
+    width: 5rem;
     margin-left: 1rem;
 }
 
@@ -37,7 +37,7 @@ nav, nav ul, nav li, nav a, nav p{
     margin: 0 0;
     padding: 0;
     list-style: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: flex;
     justify-content: space-between;
 }
