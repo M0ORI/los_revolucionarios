@@ -18,7 +18,7 @@ const Body = () => {
                 <div className={styles.button}>
                     <p>
                         <a href="">
-                            Llamanos!
+                            Llamanos
                         </a>
                     </p>
                     <img src={phone} alt="phone" />
@@ -26,7 +26,7 @@ const Body = () => {
                 <div className={styles.button}>
                     <p>
                         <a href="">
-                            Whatsapp!
+                            Whatsapp
                         </a>
                     </p>
                     <img className={styles['whatsapp-button']} src={whatsapp} alt="logow" />

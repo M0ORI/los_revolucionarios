@@ -130,8 +130,8 @@
 
     .button a {
         font-size: 40px;
-        background: #361916;
-        color: #ddd0ce;
+        background: var(--color-botton);
+        color: var(--color-texto);
         border-radius: 5px;
         text-decoration: none;
         padding: 10px 20px;

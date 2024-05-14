@@ -32,7 +32,7 @@
 }
 
 button{
-    background-color: brown;
+    background-color: var(--color-botton);
     color: black;
     width: 200px;
     height: 60px;

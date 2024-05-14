@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   
-  const ruta = location.pathname === '/' ? 'Menu' : 'Inicio';
+  const ruta = location.pathname === '/' ? 'Carta Completa' : 'Inicio';
 
   return (
     <header className={styles.navbar}>
@@ -16,7 +16,7 @@ const Navbar = () => {
         <ul>
           <li>
             <Link to={location.pathname === '/' ? '/menu' : '/'}>
-              <p>{ruta} </p>
+              <p>{ruta}</p>
             </Link>
           </li>
         </ul>
