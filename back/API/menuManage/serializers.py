@@ -1,7 +1,22 @@
 from rest_framework import serializers
-from django.contrib.auth.models import User
+from .models import Platillo, Categoria, Carrusel, Presentacion
 
-class UserSerializer(serializers.ModelSerializer):
+class PlatilloSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
-        fields = ['id', 'username', 'email']	
+        model = Platillo
+        fields = '__all__'
+
+class CategoriaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Categoria
+        fields = '__all__'
+
+class CarruselSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Carrusel
+        fields = '__all__'
+    
+class PresentacionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Presentacion
+        fields = '__all__'
