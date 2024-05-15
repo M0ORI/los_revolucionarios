@@ -22,9 +22,9 @@ const Menu = () => {
           })
         }
       <div className='contenedorBoton'>
-        <p>Descarga nuestro menu completo !!</p>
+        <p>Descarga nuestro menu completo</p>
         <a href="/public/MENU.pdf" download>
-          <button>Carta Completa</button>
+          <button>Menu Completo</button>
         </a>
       </div>
       <div className='divisor' ></div>

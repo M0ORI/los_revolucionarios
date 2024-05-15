@@ -18,8 +18,8 @@
 }
 
 .item img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 
 .item a {
@@ -27,10 +27,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .texto {
     color: var(--color-texto);
-    font-size: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
 }

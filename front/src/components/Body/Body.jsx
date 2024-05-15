@@ -1,14 +1,19 @@
 import React from 'react';
 import Platillos from '../../../src/components/Platillos/Platillos'
 import logo from '../../../public/images/logo.png';
-import phone from '../../../public/images/phone.svg';
-import whatsapp from '../../../public/images/whatsapp-logo.svg';
+import phone from '../../../public/images/Icons/phone-call.png';
+import whats from '../../../public/images/whatsapp-logo.svg';
 import biste from '../../../public/images/biste.jpg';
 import filete from '../../../public/images/Filete.jpeg';
 import pollo from '../../../public/images/pollo.jpeg';
 import styles from './Body.module.css';
 
+
 const Body = () => {
+
+    const titulo1 = window.innerWidth >= 768 ? 'Menu' : 'Llamanos'
+    const titulo2 = window.innerWidth >= 768 ?  'Visitanos' : 'WhatsApp'
+
     return (
         <div className={styles.body}>
             <h1 className={styles.nombre}>Los Revolucionarios</h1>
@@ -18,7 +23,7 @@ const Body = () => {
                 <div className={styles.button}>
                     <p>
                         <a href="">
-                            Llamanos
+                            {titulo1}
                         </a>
                     </p>
                     <img src={phone} alt="phone" />
@@ -26,10 +31,10 @@ const Body = () => {
                 <div className={styles.button}>
                     <p>
                         <a href="">
-                            Whatsapp
+                            {titulo2}
                         </a>
                     </p>
-                    <img className={styles['whatsapp-button']} src={whatsapp} alt="logow" />
+                    <img className={styles['whatsapp-button']} src={whats} alt="logow" />
                 </div>
             </div>
             <hr style={{ width: '90%', margin: 'auto', background: '#361916', height: '2px', border: 'none', margin: '2rem'}} />

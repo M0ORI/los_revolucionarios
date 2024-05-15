@@ -35,15 +35,13 @@
 }
 
 @media only screen and (min-width: 1024px) {
-
-    .imagenPlatillo{
-        width: 200px;
-        height: 150px;
-        border-radius: 0;
+    .contenedor {
+        width: 100%;
     }
 
-    .contenedor{
-        max-width: 500px;
-        height: auto;
+    .imagenPlatillo {
+        border-radius: 4px;
+        width: 250px; 
+        height: 200px; 
     }
 }

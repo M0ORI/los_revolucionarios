@@ -9,10 +9,9 @@
 
 .contenedorPlatillos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center;
 }
 
 .tituloCategoria{
@@ -21,8 +20,13 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
 }
 
 @media only screen and (min-width: 1024px) {
-
+    .contenedorPlatillos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+        gap: 20px; /* Espacio entre las imágenes */
+    }
 }
