@@ -5,7 +5,10 @@ import phone from '../../../public/images/phone.svg';
 import whatsapp from '../../../public/images/whatsapp-logo.svg';
 import biste from '../../../public/images/biste.jpg';
 import filete from '../../../public/images/Filete.jpeg';
-import pollo from '../../../public/images/pollo.jpeg';
+import revolucionaria from '../../../public/images/revolucionaria.jpg';
+import refrescos from '../../../public/images/refresco.jpeg';
+import coctel from '../../../public/images/coctel.jpg';
+import tostada from '../../../public/images/tostada.jpg';
 import styles from './Body.module.css';
 
 const Body = () => {
@@ -32,12 +35,16 @@ const Body = () => {
                     <img className={styles['whatsapp-button']} src={whatsapp} alt="logow" />
                 </div>
             </div>
-            <hr style={{ width: '90%', margin: 'auto', background: '#361916', height: '2px', border: 'none', margin: '2rem'}} />
-            <h1 className={styles.subtitle}>A la parrilla...</h1> 
+            <hr style={{ width: '90%', margin: 'auto', background: '#361916', height: '2px', border: 'none', margin: '2rem' }} />
+            <h1 className={styles.subtitle}>A la parrilla...</h1>
             <Platillos name='Costilla de Res' img={biste} />
             <Platillos name='Pollo Adobado' img={filete} />
-            <Platillos name='Pollo ' img={pollo} />
-
+            <h1 className={styles.subtitle}>Mariscos </h1>
+            <Platillos name='Tostada de camaron' img={tostada} />
+            <Platillos name='Coctel de camaron' img={coctel} />
+            <h1 className={styles.subtitle}>Bebidas </h1>
+            <Platillos name='Revolucionaria' img={revolucionaria} />
+            <Platillos name='Variedad de refrescos' img={refrescos} />
         </div>
     );
 };
