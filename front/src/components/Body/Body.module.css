@@ -9,7 +9,7 @@
 }
 
 .nombre {
-    font-family: 'Deutschlands';
+    font-family: var(--fuente-principal);
     font-size: 3rem;
     font-weight: lighter;
     color: #361916;
@@ -81,7 +81,7 @@
 .subtitle {
     color: #50342d;
     padding-bottom: 3%;
-    font-family: 'Deutschlands';
+    font-family: var(--fuente-principal);
     font-size: 40px;
     font-weight: lighter;
 }
