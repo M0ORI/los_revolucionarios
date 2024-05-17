@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 :root {
     /*Colores*/
     --color-texto: #361916;
@@ -6,5 +8,6 @@
     --color-secundario: #ddd0ce;
     --color-bg: #f0dcba;
     --color-botton:  #50964e;
+    --fuente-principal: 'Great Vibes', cursive;
 }
 
