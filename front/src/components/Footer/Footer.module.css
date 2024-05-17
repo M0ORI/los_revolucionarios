@@ -49,7 +49,7 @@
 .footer__info h2 {
     text-align: center;
     background-color: transparent;
-    font-family: 'Deutschlands';
+    font-family: var(--fuente-principal);
     font-weight: lighter;
     font-size: 1.5rem;
 }
