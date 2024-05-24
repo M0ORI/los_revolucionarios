@@ -16,7 +16,7 @@ const Navbar = () => {
         <ul>
           <li>
             <Link to={location.pathname === '/' ? '/menu' : '/'}>
-              <p>{ruta}</p>
+              <p className={styles.carta}>{ruta}</p>
             </Link>
           </li>
         </ul>
