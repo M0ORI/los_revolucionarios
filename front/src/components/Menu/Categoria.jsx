@@ -10,7 +10,7 @@ const Categoria = ({nombre, platillos}) => { /*Se reciben los atributos necesari
           {
             platillos.map((platillo, id) => { /*Se hace uso de la funcion map para extraer los datos del objeto platillos, y asi hacer de cada uno un componente */
               return (
-                <Platillo nombre={platillo.nombre} img={platillo.img} descripcion={platillo.descripcion} key={id} />
+                <Platillo nombre={platillo.nombre} img={platillo.imagen} descripcion={platillo.descripcion} key={id} />
               )
             })
           }
