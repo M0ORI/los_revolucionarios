@@ -18,8 +18,8 @@
 }
 
 .item img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 .item a {
@@ -32,6 +32,21 @@
 
 .texto {
     color: var(--color-texto);
-    font-size: 30px;
+    font-size: 15px;
     text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1023px) {
+    .contenedor .item:nth-child(1) {
+        display: none;
+    }
+
+    .item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .texto {
+        font-size: 25px;
+    }
 }

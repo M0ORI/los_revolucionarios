@@ -7,16 +7,21 @@ class PlatilloSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class CategoriaSerializer(serializers.ModelSerializer):
+    platillos = PlatilloSerializer(many=True)
+
     class Meta:
         model = Categoria
         fields = '__all__'
 
 class CarruselSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Carrusel
-        fields = '__all__'
+        fields = ['imagen']
     
 class PresentacionSerializer(serializers.ModelSerializer):
+    platillo = PlatilloSerializer()
+
     class Meta:
         model = Presentacion
         fields = '__all__'
