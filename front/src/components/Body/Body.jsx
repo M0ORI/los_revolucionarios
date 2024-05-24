@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Platillos from '../../../src/components/Platillos/Platillos'
 import logo from '../../../public/images/logo.png';
 import phone from '../../../public/images/Icons/phone-call.png';
@@ -14,8 +14,24 @@ import styles from './Body.module.css';
 
 const Body = () => {
 
-    const titulo1 = window.innerWidth >= 768 ? 'Menu' : 'Llamanos'
-    const titulo2 = window.innerWidth >= 768 ?  'Visitanos' : 'WhatsApp'
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1024);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const titulo1 = isMobile ? 'Llamanos' : 'Menu';
+    const titulo2 = isMobile ? 'WhatsApp' : 'Visitanos';
+
+    const menuLink = isMobile ? "tel:4432324326" : "/menu";
+    const contactLink = isMobile ? "https://wa.me/4432324326" : "https://maps.app.goo.gl/xVn9zztRbxQoG5gz8";
 
     return (
         <div className={styles.body}>
@@ -25,19 +41,20 @@ const Body = () => {
             <div className={styles.buttons}>
                 <div className={styles.button}>
                     <p>
-                        <a href="">
+                        <a className={styles.reference} href={menuLink} target={isMobile ? "" : "_self"} rel={isMobile ? "" : "noopener noreferrer"}>
                             {titulo1}
+                            <img src={phone} alt="phone" />
                         </a>
                     </p>
-                    <img src={phone} alt="phone" />
+                    
                 </div>
                 <div className={styles.button}>
                     <p>
-                        <a href="">
+                        <a  className={styles.reference} href={contactLink} target='_blank'>
                             {titulo2}
+                            <img className={styles['whatsapp-button']} src={whats} alt="logow" />
                         </a>
                     </p>
-                    <img className={styles['whatsapp-button']} src={whats} alt="logow" />
                 </div>
             </div>
             <hr style={{ width: '90%', margin: 'auto', background: '#361916', height: '2px', border: 'none', margin: '2rem' }} />

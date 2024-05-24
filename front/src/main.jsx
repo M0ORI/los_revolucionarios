@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Menu from './components/Menu/Menu.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 const router = createBrowserRouter([
   {

@@ -41,7 +41,15 @@
 
     .imagenPlatillo {
         border-radius: 4px;
-        width: 250px; 
-        height: 200px; 
+        width: 300px; 
+        height: 250px; 
+    }
+
+    .informacionContenedor p{
+        font-size: 20px;
+    }
+
+    .informacionContenedor h2{
+        font-size: 30px;
     }
 }

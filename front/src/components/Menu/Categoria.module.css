@@ -24,9 +24,14 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    .tituloCategoria{
+        font-size: 30px;
+    }
+
     .contenedorPlatillos{
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
         gap: 20px; /* Espacio entre las imágenes */
+        margin-inline: 90px;
     }
 }
