@@ -6,4 +6,5 @@ urlpatterns = [
     path('getCategorias/', views.getCategorias, name='getCategorias'),
     path('getCarrusel/', views.getCarrusel, name='getCarrusel'),
     path('getPresentaciones/', views.getPresentaciones, name='getPresentaciones'),
+    path('getHome/', views.getHome, name='getHome'),
 ]
