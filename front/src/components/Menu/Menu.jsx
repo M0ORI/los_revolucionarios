@@ -5,8 +5,6 @@ import InvNavrbar from '../InvNavbar/InvNavrbar'
 import Contacto from '../Contacto/Contacto'
 import logo from '../../../public/images/logo.png'
 
-import menuData from '../../data/menu.json' /*Importamos el archivo JSON que contiene la infomacion de las categorias con sus respectivos paltillos*/
-
 import './Menu.css' /*Importamos el estilo  */
 
 const Menu = () => {
@@ -20,7 +18,6 @@ const Menu = () => {
 
     window.addEventListener('resize', handleResize);
 
-    // Cleanup function to remove event listener
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -43,6 +40,24 @@ const Menu = () => {
     document.body.removeChild(link);
   };
 
+  const [data, setData] = useState([]);
+    
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://los-revolucionarios-back.onrender.com/menu/getCategorias');
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  console.log(data)
+
   return (
     <>
       {windowWidth > 1023 ? (
@@ -60,12 +75,12 @@ const Menu = () => {
         <p>Los Revolucionarios</p>
         </div>
         {
-          menuData.map((categoria, id) => { /*Usamos la funcion map para renderizar cada categoria con sus respctivos platillos en componentes, haciendo uso de la informacion contenida */
+          data.map((categoria) => {
             return (
-              <Categoria nombre={categoria.categoria} platillos={categoria.platillos} key={id} />
+              <Categoria nombre={categoria.nombre} platillos={categoria.platillos} key={categoria.id} />
             )
           })
-        }
+        } 
       <div className='contenedorBoton'> {/*Div usado para dividir la pagina */}
         <p>Descarga nuestro menu completo</p>
           <button onClick={handleDownload}>Menú Completo</button> {/*Boton para descargar el menu*/}

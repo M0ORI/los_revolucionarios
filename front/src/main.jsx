@@ -1,9 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Menu from './components/Menu/Menu.jsx';
-import Footer from './components/Footer/Footer.jsx';
+
+const RedirectToAdmin = () => {
+  React.useEffect(() => {
+    window.location.href = 'https://los-revolucionarios-back.onrender.com/admin/';
+  }, []);
+  return null; 
+};
 
 const router = createBrowserRouter([
   {
@@ -13,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/menu',
     element: <Menu/>
+  },
+  {
+    path: '/admin',
+    element: <RedirectToAdmin/>
   }
 ]);
 
