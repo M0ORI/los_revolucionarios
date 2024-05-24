@@ -10,7 +10,7 @@ const InvNavrbar = () => {
   const location = useLocation(); // Obtén la ubicación actual
 
   const home = location.pathname === '/' ? 'Inicio' : ''
-  const menu = location.pathname === '/menu' ? 'Menu' : ''
+  const menu = location.pathname === '/menu' ? 'Menú' : ''
 
   return (
     <nav className={styles.contenedor}>
