@@ -31,7 +31,7 @@
 .footer__info {
     display: flex;
     width: 50%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     background-color: transparent;
@@ -55,19 +55,21 @@
 }
 
 .footer__info h2 {
-    display: none;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
 }
+
 
 .footer__info h1 {
     margin-bottom: 0.5rem;
 }
 
 .footer__info__contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     background-color: transparent;
     margin-top: 1rem;
+    display: none;
 }
 
 .footer__info__contact__number a,
@@ -108,21 +110,37 @@
 /*Escritorio*/
 @media only screen and (min-width: 1024px) {
     .footer {
-        height: 35vh;
+        height: 50vh;
+    }
+
+    .footer__info > img {
+        height: 18%;
+        width: 18%;
+        background-color: transparent;
+        margin-bottom: 0;
     }
 
     .footer__map iframe {
-        height: 30vh;
+        height: 45vh;
     }
 
     .footer__info h1,
-    .footer__info h3,
-    .footer__info h2 {
-        font-size: 2rem;
+    .footer__info h3 {
+        font-size: 3rem;
+    }
+    
+    .footer__info__contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__info__contact h3 {
+        padding-bottom: 10%;
     }
 
     .footer__info h2 {
-        display: block;
+        font-size: 2.2rem;
     }
 
     .footer__info__contact__number a,
