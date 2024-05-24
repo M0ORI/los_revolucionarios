@@ -40,8 +40,7 @@ const Body = () => {
                     <img className={styles['whatsapp-button']} src={whats} alt="logow" />
                 </div>
             </div>
-            <hr style={{ width: '90%', margin: 'auto', background: '#361916', height: '2px', border: 'none', margin: '2rem' }} />
-            <h1 className={styles.subtitle}>A la parrilla...</h1>
+            <h1 className={styles.subtitle}>A la parrilla</h1>
             <Platillos name='Costilla de Res' img={biste} />
             <Platillos name='Pollo Adobado' img={filete} />
             <h1 className={styles.subtitle}>Mariscos </h1>
