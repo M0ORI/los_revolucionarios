@@ -1,18 +1,13 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable react/prop-types */
+
+import { useState, useEffect } from 'react';
 import Platillos from '../../../src/components/Platillos/Platillos'
 import logo from '../../../public/images/logo.png';
 import phone from '../../../public/images/Icons/phone-call.png';
 import whats from '../../../public/images/whatsapp-logo.svg';
-import biste from '../../../public/images/biste.jpg';
-import filete from '../../../public/images/Filete.jpeg';
-import revolucionaria from '../../../public/images/revolucionaria.jpg';
-import refrescos from '../../../public/images/refresco.jpeg';
-import coctel from '../../../public/images/coctel.jpg';
-import tostada from '../../../public/images/tostada.jpg';
 import styles from './Body.module.css';
 
-
-const Body = () => {
+const Body = ( {datos} ) => {
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
@@ -57,14 +52,23 @@ const Body = () => {
                 </div>
             </div>
             <h1 className={styles.subtitle}>A la parrilla</h1>
-            <Platillos name='Costilla de Res' img={biste} />
-            <Platillos name='Pollo Adobado' img={filete} />
-            <h1 className={styles.subtitle}>Mariscos </h1>
-            <Platillos name='Tostada de camaron' img={tostada} />
-            <Platillos name='Coctel de camaron' img={coctel} />
-            <h1 className={styles.subtitle}>Bebidas </h1>
-            <Platillos name='Revolucionaria' img={revolucionaria} />
-            <Platillos name='Variedad de refrescos' img={refrescos} />
+            {datos.slice(0, 2).map((item, index) => (
+                <Platillos key={index} name={item.platillo.nombre} img={item.platillo.imagen} />
+            ))}
+            
+            <h1 className={styles.subtitle}>Mariscos</h1>
+            {datos.slice(2, 4).map((item, index) => (
+                <Platillos key={index} name={item.platillo.nombre} img={item.platillo.imagen} />
+            ))}
+            
+            <h1 className={styles.subtitle}>Bebidas</h1>
+            {datos.slice(4, 6).map((item, index) => (
+                <Platillos key={index} name={item.platillo.nombre} img={item.platillo.imagen} />
+            ))}
+            {/* {datos.map((platillo) => (
+                <Platillos key={platillo.id} name={platillo.platillo.nombre} img={platillo.platillo.imagen} />
+            ))} */}
+
         </div>
     );
 };

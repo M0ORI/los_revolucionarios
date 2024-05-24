@@ -50,3 +50,21 @@ def getPresentaciones(request):
 
     print(set_categorias)
     return Response(serializer.data)
+
+@api_view(['GET'])
+def getHome(request):
+    # carrusel and presentaciones
+    carrusel = Carrusel.objects.all()
+    serializer = CarruselSerializer(carrusel, many=True)
+    carrusel_data = serializer.data
+
+    presentaciones = Presentacion.objects.all()
+    serializer = PresentacionSerializer(presentaciones, many=True)
+    presentaciones_data = serializer.data
+
+    json_data = {
+        'carrusel': carrusel_data,
+        'presentaciones': presentaciones_data
+    }
+
+    return Response(json_data)
