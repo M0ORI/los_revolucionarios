@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/menu/getHome/');
+        const response = await fetch('https://los-revolucionarios-back.onrender.com/menu/getHome/');
         const result = await response.json();
         setData(result);
       } catch (error) {
