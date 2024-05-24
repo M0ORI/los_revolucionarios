@@ -46,7 +46,6 @@ const Body = () => {
                             <img src={phone} alt="phone" />
                         </a>
                     </p>
-                    
                 </div>
                 <div className={styles.button}>
                     <p>
