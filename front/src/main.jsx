@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <Menu/>
   },
   {
-    path: '/admin',
+    path: '/login',
     element: <RedirectToAdmin/>
   }
 ]);
