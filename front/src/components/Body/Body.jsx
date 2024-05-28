@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Platillos from '../../../src/components/Platillos/Platillos'
 import logo from '../../../public/images/logo.png';
 import phone from '../../../public/images/Icons/phone-call.png';
-import whats from '../../../public/images/whatsapp-logo.svg';
+import whats from '../../../public/images/Icons/whatsapp.png';
 import styles from './Body.module.css';
 
 const Body = ( {datos} ) => {

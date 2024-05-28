@@ -46,7 +46,7 @@
 
 
 .intro p {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
 }
 .contenedorBoton {
@@ -58,7 +58,7 @@
 }
 
 .contenedorBoton p {
-    font-size: 27px;
+    font-size: 1.5rem;
     font-weight: lighter;
     color: var(--color-titulos);
     text-decoration: underline;
@@ -100,7 +100,7 @@ button:hover {
     }
 
     .contenedorBoton p {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     button {
