@@ -36,17 +36,17 @@ const Carrusel = ({ images }) => {
   return (
     <div className={styles.container}>
       <div className={styles.carrusel}>
-        {/* <img className={styles.img} src={coctel} alt="imagen1" />
+        <img className={styles.img} src={coctel} alt="imagen1" />
         <img className={styles.img} src={menu} alt="imagen2" />
-        <img className={styles.img} src={camaron} alt="imagen3" /> */}
-        {images.map((image, index) => (
+        <img className={styles.img} src={camaron} alt="imagen3" />
+        {/*  {images.map((image, index) => (
           <img
             key={index} 
             src={image.imagen}
             alt={image.nombre}
             className={styles.img}
-          />
-        ))}
+          /> 
+        ))} */}
       </div>
     </div>
 

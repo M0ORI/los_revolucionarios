@@ -5,6 +5,8 @@ import InvNavrbar from '../InvNavbar/InvNavrbar'
 import Contacto from '../Contacto/Contacto'
 import logo from '../../../public/images/logo.png'
 
+import MenuData from '../../data/menu.json'
+
 import './Menu.css' /*Importamos el estilo  */
 
 const Menu = () => {
@@ -74,13 +76,24 @@ const Menu = () => {
         <img src={logo} alt="" />
         <p>Los Revolucionarios</p>
         </div>
-        {
+
+      {/*   {
           data.map((categoria) => {
             return (
               <Categoria nombre={categoria.nombre} platillos={categoria.platillos} key={categoria.id} />
             )
           })
+        }  */}
+
+        {
+          MenuData.map((categoria,id) => {
+            return (
+              <Categoria nombre={categoria.nombre} platillos={categoria.platillos} key={id} />
+            )
+          })
         } 
+
+
       <div className='contenedorBoton'> {/*Div usado para dividir la pagina */}
         <p>Descarga nuestro menu completo</p>
           <button onClick={handleDownload}>Menú Completo</button> {/*Boton para descargar el menu*/}

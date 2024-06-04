@@ -6,12 +6,12 @@
             {
                 "nombre": "Pollo Adobado",
                 "descripcion": "Acompañado con papas, aguacate, ensalada y frijoles.",
-                "img": "/images/Menu/Pollo_adobado.jpg"
+                "imagen": "/images/Menu/Pollo_adobado.jpg"
             },
             {
                 "nombre": "Costilla de Res",
                 "descripcion": "220 gramos del corte acompañados de papas, frijoles, ensalada, y cebollitas.",
-                "img": "/images/Menu/Costilla_Res.jpg"
+                "imagen": "/images/Menu/Costilla_Res.jpg"
             }
         ]
     },
@@ -21,17 +21,17 @@
             {
                 "nombre": "Tostada de camarón",
                 "descripcion": "Acompañada de aguacate fresco y otros condimentos.",
-                "img": "/images/Menu/Tostada_Camaron.jpg"
+                "imagen": "/images/Menu/Tostada_Camaron.jpg"
             },
             {
                 "nombre": "Coctel de camarón o pulpo",
                 "descripcion": "Acompañado de la sala especial de la casa.",
-                "img": "/images/Menu/Coctel_CP.jpg"
+                "imagen": "/images/Menu/Coctel_CP.jpg"
             },
             {
                 "nombre": "Carrillera Marina",
                 "descripcion": "Acompañado de pimiento morrón, cebolla, tocino, queso y camarones.",
-                "img": "/images/Menu/Carrillera_Marina.jpg"
+                "imagen": "/images/Menu/Carrillera_Marina.jpg"
             }
             
         ]
@@ -42,12 +42,12 @@
             {
                 "nombre": "Revolucionaria",
                 "descripcion": "Bebida especial de la casa, de diferentes sabores.",
-                "img": "/images/Menu/Revolucionaria.jpg"
+                "imagen": "/images/Menu/Revolucionaria.jpg"
             },
             {
                 "nombre": "Variedad de refrescos",
                 "descripcion": "Refrescos de varios sabores para acompañar tus comidas.",
-                "img": "/images/Menu/Refrescos.jpeg"
+                "imagen": "/images/Menu/Refrescos.jpeg"
             }
         ]
     }
