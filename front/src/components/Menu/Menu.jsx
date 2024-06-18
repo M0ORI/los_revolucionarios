@@ -27,7 +27,7 @@ const Menu = () => {
 
   const handleDownload = () => {
     // URL del documento que deseas descargar
-    const url = '/public/MENU.pdf';
+    const url = '/MENU.pdf';
     
     // Crear un enlace invisible
     const link = document.createElement('a');
