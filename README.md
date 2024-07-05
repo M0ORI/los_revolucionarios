@@ -6,10 +6,10 @@
 
 Los Revolucionarios es un sitio web diseñado para proporcionar información detallada sobre un restaurante. El sitio incluye:
 
-- Menú completo con descripciones y precios.
+- Menú completo de platillos con descripciones y precios.
 - Información sobre el restaurante, incluyendo su historia y misión.
 - Galería de fotos del restaurante y sus platos.
-- Sistema de reservas en línea.
+- Sistema de Administracion de platillos, para poder subir, eliminar y editar contenido de la pagina.
 
 ## Tecnologías Utilizadas
 
